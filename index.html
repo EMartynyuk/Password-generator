@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="resources/#.ico" type="image/x-icon">
+  <meta name="theme-color" content="#111111">
+  <title>Generator Password</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="js/main.min.js"></script>
+  <script defer src="js/rangeSlider.js"></script>
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="password">
+                <div class="password__title">Password Generator</div>
+                <div class="password__result">
+                    <p class="password__result-text">Password</p>
+                    <svg class="password__result-clipboard">
+                        <use xlink:href="images/sprite.svg#copy-regular"></use>
+                    </svg>
+                    <span class="password__result-clipboard-tooltip">Copied!</span>
+                </div>
+                <div class="password__settings">
+                    <div class="password__length">
+                        <p class="password__length-text">Character Length</p>
+                        <span class="password__length-num">0</span>
+                    </div>
+                    <div class="password__range"></div>
+                    <div class="password__checks">
+                        <label class="password__check-label">
+                            <input class="password__check-input" type="checkbox" name="checkbox" id="lower">
+                            <span class="password__check-span"></span>
+                            Include Lowercase Letters
+
+                        </label>
+                        <label class="password__check-label">
+                            <input class="password__check-input" type="checkbox" name="checkbox" id="upper">
+                            <span class="password__check-span"></span>
+                            Include Uppercase Letters
+                        </label>
+                        <label class="password__check-label">
+                            <input class="password__check-input" type="checkbox" name="checkbox" id="num">
+                            <span class="password__check-span"></span>
+                            Include Numbers
+                        </label>
+                        <label class="password__check-label">
+                            <input class="password__check-input" type="checkbox" name="checkbox" id="symb">
+                            <span class="password__check-span"></span>
+                            Include Symbols
+                        </label>
+                    </div>
+                    <div class="password__stregth">
+                        <p class="password__stregth-text">strength</p>
+                        <p class="password__stregth-text-diff"></p>
+                        <div class="password__stregth-items">
+                            <div class="password__stregth-item"></div>
+                            <div class="password__stregth-item"></div>
+                            <div class="password__stregth-item"></div>
+                            <div class="password__stregth-item"></div>
+                        </div>
+                    </div>
+                    <button class="password__btn">Generate</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
